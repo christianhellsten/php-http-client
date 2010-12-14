@@ -73,7 +73,7 @@ class HTTP {
       # Note: ignore eg. "HTTP/1.0 200 Connection established" from proxies
       $many = preg_match("#HTTP\/1\.[0,1] (100 Continue|200 Connection established)#", $text);
       if($many) {
-          list($header_text, $proxy_status, $body) = explode("\r\n\r\n", $response, 3);
+        list($header_text, $proxy_status, $body) = explode("\r\n\r\n", $response, 3);
       } else {
         list($header_text, $body) = explode("\r\n\r\n", $response, 2);
       }
