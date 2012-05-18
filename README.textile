@@ -27,3 +27,8 @@ $parameters = array(
 $response = HTTP::post('http://my-files/upload', $parameters)
   </pre>
 </code>
+
+h2. License
+
+Released under the MIT license:
+www.opensource.org/licenses/MIT
